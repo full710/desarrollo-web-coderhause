@@ -440,17 +440,13 @@ section .carousel-propio div p {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         width: 85% !important;
     }
-    .grid-item img {
-        width: 150px;
-        height: 150px;
-    }
+    
 }
 @media screen and (max-width:436px) {
     .grid-contenedor{
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         width: 95% !important;
-    }
-    
+    }  
 }
 @media screen and (max-width:358px) {
     .grid-contenedor {
@@ -514,7 +510,12 @@ section .carousel-propio div p {
         height: 150px;
     }   
 }
-
+@media screen and (max-width:380px) {
+    .grid-item img {
+        width: 120px;
+        height: 120px;
+    }
+}
 @media screen and (max-width:358px) {
     .grid-item {
         height: 250px !important;
@@ -523,7 +524,12 @@ section .carousel-propio div p {
         width: 120px;
         height: 120px;
     }   
-
+}
+@media screen and (max-width:320px) {
+    .grid-item img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 /**MAIN NOSOTROS**/
