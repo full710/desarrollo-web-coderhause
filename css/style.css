@@ -225,8 +225,8 @@ section .carousel-propio div p{
     transform: scale(1.02);
 }
 .card-publicacion img{
-    width: 100%;
-    height: auto;
+    width: 99%;
+    height: 180px;
 }
 .card-publicacion a{
     text-wrap:wrap;
@@ -393,7 +393,7 @@ section .carousel-propio div p{
 }
 .grid-item img{
     width: 98%;
-    height: auto;
+    height: 200px;
 }
 .grid-item a{
     text-wrap:wrap;
