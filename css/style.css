@@ -113,62 +113,32 @@ section .carousel .img-carousel-pequenia {
 /**MAIN INDEX**/
 /* CARRUSELES DE PRODUCTOS**/
 
-.carousel-responsive {
+.portada-fija {
     display: none;
 }
 
-section .carousel-propio {
-    background-image: url(../img/acerca-de-nosotros.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 700px;
+.contenedor-portada {
     position: relative;
     display: flex;
-    flex-direction: column;
+    width: 100%;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
 
-section .carousel-propio div img {
+section .portada-fija .contenedor-portada img {
     width: 100%;
 }
 
-section .carousel-propio div p {
-    background-color: white;
-    text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-    section .carousel-propio div img {
-        width: 80%;
-        margin: 10%;
-    }
-}
 
 @media screen and (max-width: 995px) {
     .carousel {
         display: none !important;
     }
-
-    .carousel-responsive {
+    .portada-fija {
         display: block;
 
     }
-
-    .carousel-propio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .carousel-propio div {
-        margin: 2px;
-        font-size: 15px;
-    }
-
 }
 
 .container-grande {
@@ -268,62 +238,6 @@ section .carousel-propio div p {
     font-size: 12px !important;
     text-decoration: line-through;
     color: red;
-}
-
-/*!CONTACTO!*/
-.main-contacto {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.main-contacto .medios h3 {
-    font-size: 40px;
-}
-
-.main-contacto .medios p {
-    font-size: 25px;
-    flex-wrap: wrap;
-}
-
-.main-contacto form {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-contacto .mensaje-direct input,
-.main-contacto .mensaje-direct textarea {
-    border: solid rgb(196, 118, 1) 2px;
-    font-style: italic;
-    padding: 11px;
-    width: 100%;
-    letter-spacing: 1px;
-}
-
-.main-contacto .mensaje-direct .form-top {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.main-contacto .mensaje-direct .form-top input {
-    width: 100%;
-    margin: 2px;
-}
-
-.construccion {
-    font-size: 50px;
-    margin: 30px;
-    text-align: center;
-}
-
-.construccion a {
-    text-decoration: none;
-    color: black;
-    border: solid 2px black;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 /*MAIN TIENDA*/
@@ -548,9 +462,103 @@ main .texto-nosotros img {
 main .texto-nosotros div {
     flex: 1;
     margin-left: 15px;
+}
 
+@media screen and (max-width:992px) {
+    main .texto-nosotros{
+        flex-direction: column;
+    }
+}
 
+@media screen and (max-width:550px) {
+    main .texto-nosotros img{
+        width: 70%;
+    }
+}
 
+@media screen and (max-width:350px) {
+    main .texto-nosotros div p{
+        font-size: 12px;
+    }
+    
+}
+
+/**MAIN CONTACTO**/
+
+.main-contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main-contacto .medios h3 {
+    font-size: 20px;
+}
+
+.main-contacto .medios p {
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.main-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-contacto .mensaje-direct input,
+.main-contacto .mensaje-direct textarea {
+    border: solid rgb(196, 118, 1) 2px;
+    font-style: italic;
+    padding: 11px;
+    width: 98%;
+    letter-spacing: 1px;
+}
+
+.main-contacto .mensaje-direct .form-top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-contacto .mensaje-direct .form-top input {
+    width: 98%;
+    margin: 2px;
+}
+@media screen and (max-width:1284px) {
+    .main-contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-contacto .medios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .main-contacto .medios p{
+        margin-right: 5%;
+        margin-left: 5%;
+        text-align: center;
+    } 
+}
+
+@media screen and (max-width:550px) {
+    .main-contacto .medios p{
+        font-size: 13px;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .main-contacto .medios iframe {
+        width: 80%;
+        height: auto;
+    }
+    .main-contacto form{
+        margin: auto;
+        width: 80%;
+        height: auto;
+    }
 }
 
 /**FOOTER**/
