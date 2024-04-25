@@ -671,3 +671,67 @@ footer {
         margin: 3px;
     }
 }
+
+
+
+/*MAIN BLOG*/
+main section .boxs-blog{
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+main section div .contenedor-box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+main section div .contenedor-box .box1-blog{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FEC501;
+    border: solid 1px black;
+    transition:  width 3s ease;
+    z-index: 2;
+}
+main section div .contenedor-box .box2-blog{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: lightseagreen;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main section div .contenedor-box .box2-blog p{
+    margin-left: 3%;
+    margin-right: 3%;
+    font-weight: bold;
+    text-align: center;
+}
+main section div .contenedor-box .box2-blog a{
+    text-decoration: none;
+    color: white;
+}
+main section div .contenedor-box .box2-blog a:hover{
+    text-decoration:underline;
+}
+section .box1-blog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main section div .contenedor-box:hover .box1-blog{
+    width: 0%;
+}
