@@ -22,11 +22,11 @@ body {
     margin-bottom: 0 !important;
 }
 
-.logo-header {
+header div .logo-header {
     margin-left: 5%;
 }
 
-.espacio-busqueda {
+header div .espacio-busqueda {
     margin-right: 15% !important;
 }
 
@@ -37,7 +37,7 @@ body {
         align-items: center;
     }
 
-    .logo-header {
+    header div .logo-header {
         margin: auto !important;
     }
 
@@ -48,7 +48,7 @@ body {
 }
 
 @media screen and (max-width:600px) {
-    .titulo-header img {
+    header div .logo header .titulo-header img {
         width: 70%;
         margin: 5px;
     }
@@ -71,20 +71,20 @@ body {
     border-bottom: solid lightseagreen 4px !important;
 }
 
-.nav-item {
+nav div div ul .nav-item {
     font-size: 20px !important;
 }
 
-.nav-item:hover {
+nav div div ul .nav-item:hover {
     box-shadow: 0px 2px 0px #FE3A4A;
 }
-
-section .carousel .img-carousel-grande {
+/*MAIN INICIO*/
+section .carousel div .img-carousel-grande {
     width: 100% !important;
     height: 750px !important;
 }
 
-section .carousel .img-carousel-pequenia {
+section .carousel div div .img-carousel-pequenia {
     margin: 15px !important;
 
 }
@@ -100,24 +100,18 @@ section .carousel .img-carousel-pequenia {
     transform: scale(1.03);
 }
 
-.inf-car {
+section .carousel div div div .inf-car {
     background-color: white;
     color: black;
     font-size: 20px;
     margin-top: 7px;
     display: inline-block;
 }
-
-/**MAIN**/
-
-/**MAIN INDEX**/
-/* CARRUSELES DE PRODUCTOS**/
-
-.portada-fija {
+section .portada-fija {
     display: none;
 }
 
-.contenedor-portada {
+section .portada-fija .contenedor-portada {
     position: relative;
     display: flex;
     width: 100%;
@@ -135,13 +129,13 @@ section .portada-fija .contenedor-portada img {
     .carousel {
         display: none !important;
     }
-    .portada-fija {
+    section .portada-fija {
         display: block;
 
     }
 }
 
-.container-grande {
+section .container-grande {
     width: 65%;
     background-color: white;
     display: flex;
@@ -153,30 +147,30 @@ section .portada-fija .contenedor-portada img {
 }
 
 @media screen and (max-width:981px) {
-    .container-grande {
+    section .container-grande {
         width: 70%;
     }
 }
 
 @media screen and (max-width:800px) {
-    .container-grande {
+    section .container-grande {
         width: 80%;
     }
 }
 
 @media screen and (max-width:700px) {
-    .container-grande {
+    section .container-grande {
         width: 90%;
     }
 }
 
 @media screen and (max-width:480px) {
-    .container-grande {
+    .section .container-grande {
         width: 98%;
     }
 }
 
-.container-de-publicaciones {
+section .container-grande .container-de-publicaciones {
     max-width: 98%;
     min-width: auto;
     overflow-x: auto;
@@ -190,12 +184,7 @@ section .portada-fija .contenedor-portada img {
     background: white;
 }
 
-.titulo-card {
-    text-align: center;
-    position: relative;
-}
-
-.card-publicacion {
+section .container-grande .container-de-publicaciones .card-publicacion {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -207,20 +196,21 @@ section .portada-fija .contenedor-portada img {
     color: white;
     border: solid white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
 
 }
 
-.card-publicacion:hover {
-    box-shadow: 3px 8px 12px #FEC501;
-    transform: scale(1.02);
+section .container-grande .container-de-publicaciones .card-publicacion:hover {
+    box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.527);
+    transform: scale(1.01);
 }
 
-.card-publicacion img {
+section .container-grande .container-de-publicaciones .card-publicacion img {
     width: 99%;
     height: 180px;
 }
 
-.card-publicacion a {
+section .container-grande .container-de-publicaciones .card-publicacion a {
     text-wrap: wrap;
     text-align: center;
     font-size: 18px;
@@ -228,13 +218,13 @@ section .portada-fija .contenedor-portada img {
     color: #FE3A4A;
 }
 
-.card-publicacion h3 {
+section .container-grande .container-de-publicaciones .card-publicacion h3 {
     text-align: center;
     font-size: 20px;
     color: gray;
 }
 
-.oferta .precio-normal {
+section .container-grande .container-de-publicaciones .oferta .precio-normal {
     font-size: 12px !important;
     text-decoration: line-through;
     color: red;
