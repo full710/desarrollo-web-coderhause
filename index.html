@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
     <!--DESCRIPCION-->
     <meta name="description" content="">
@@ -65,26 +65,22 @@
     </nav>    
     <main>
         <section>
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./img/Productos-nuevos.jpg" class="d-block w-100 img-carousel-grande" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a class="color-btn" href="./pages/tienda.html"><button type="button"
-                                    class="btn btn-secondary  color-btn">Ir a tienda</button></a>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/acerca-de-nosotros.jpg" class="d-block w-100 img-carousel-grande" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <div>
-                                <img src="./img/Captura de pantalla 2024-04-10 220152.png" class="img-carousel-pequenia" alt="Las manos detras de El duende Carpintero">
+            <div class="box-carousel">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./img/img-carousel1.png" class="d-block w-100 img-carousel-grande" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="color-btn" href="./pages/tienda.html"><button type="button"
+                                        class="btn btn-secondary  color-btn">Ir a tienda</button></a>
                             </div>
-                            <a class="color-btn" href="./pages/acerca-de-nosotros.html"><button type="button"
-                                    class="btn btn-secondary  color-btn">Nosotros</button></a>
-                            <div>
-                                <p class="inf-car">Somos Brenda y Panchi, el corazón y el alma detrás de "El Duende
-                                    Carpintero".</p>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./img/img-carousel2.png" class="d-block w-100 img-carousel-grande" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="color-btn" href="./pages/acerca-de-nosotros.html"><button type="button"
+                                        class="btn btn-secondary  color-btn">Nosotros</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -94,7 +90,7 @@
         <section>
             <div class="portada-fija">
                 <div class="contenedor-portada">
-                    <img src="./img/Productos-nuevos.jpg" alt="">
+                    <img src="./img/img-carousel1.png" alt="">
                 </div>
             </div>
         </section>
@@ -103,83 +99,87 @@
                 <h2>NUEVOS PRODUCTOS</h2>
                 <div class="container-de-publicaciones">
                     <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
-                        <h3>$3500</h3>                
+                        <img src="./img/img-productos-new1.png" alt="Casa de muñecas">
+                        <a href="./pages/tienda.html">Casa de muñecas</a>
+                        <h3>$150000</h3>                
                     </div>
                     <div class="card-publicacion">
-                        <img src="./img/portacelulares.png" alt="">
-                        <a href="./pages/tienda.html">Porta-celulares c/corte en lazer</a>
-                        <h3>$2500</h3>                
+                        <img src="./img/img-productos-new2.png" alt="Juego de cocina">
+                        <a href="./pages/tienda.html">Juego de cocina</a>
+                        <h3>$130000</h3>                
                     </div>
                     <div class="card-publicacion">
-                        <img src="./img/Juego-de-cocina-pintado.png" alt="">
-                        <a href="./pages/tienda.html">Juego de cocina pintado</a>
-                        <H3>$70000</H3>     
+                        <img src="./img/img-productos-new3.png" alt="Juego mesa/silla">
+                        <a href="./pages/tienda.html">Juego mesa/silla</a>
+                        <H3>$30000</H3>     
                     </div>
                     <div class="card-publicacion">
-                        <img src="./img/Juego-de-mesa-pintado.png" alt="">
-                        <a href="./pages/tienda.html">Juego de mesa pintado</a>
-                        <h3>$50000</h3>                
+                        <img src="./img/img-productos-new4.png" alt="Caja copa vino">
+                        <a href="./pages/tienda.html">Caja copa vino</a>
+                        <h3>$5000</h3>                
+                    </div>
+                    <div class="card-publicacion">
+                        <img src="./img/img-productos-new5.png" alt="Cara para regalo">
+                        <a href="./pages/tienda.html">Cara para regalo</a>
+                        <h3>$5000</h3>                
+                    </div>
+                    <div class="card-publicacion">
+                        <img src="./img/img-productos-new6.png" alt="Candy bar">
+                        <a href="./pages/tienda.html">Candy bar</a>
+                        <h3>$10000</h3>                
                     </div>
                 </div>
             </div>
             <div class="container-grande">
-                <h2>OFERTAS</h2>
+                <h2>OFERTAS | 25% OFF</h2>
                 <div class="container-de-publicaciones">
                     <div class="card-publicacion oferta">
-                        <img src="./img/arbol-navidad.jpg" alt="">
-                        <a href="./pages/tienda.html">Arbol navidad</a>
+                        <img src="./img/img-productos-off1.png" alt="Juego didactico">
+                        <a href="./pages/tienda.html">Juego didactico</a>
                         <h3 class="precio-normal">ANTES $5000</h3>
-                        <h3 class="precio-oferta">AHORA $2500</h3>                        
+                        <h3 class="precio-oferta">AHORA $3750</h3>                        
                     </div>
                     <div class="card-publicacion oferta">
-                        <img src="./img/caja-archivos.jpg" alt="">
-                        <a href="./pages/tienda.html">Cara archivo</a>
+                        <img src="./img/img-productos-off2.png" alt="Maletin kit Pintura">
+                        <a href="./pages/tienda.html">Maletin kit Pintura</a>
                         <h3 class="precio-normal">ANTES $7500</h3>
-                        <h3 class="precio-oferta">AHORA $6000</h3>                     
+                        <h3 class="precio-oferta">AHORA $5625</h3>                     
                     </div>
                     <div class="card-publicacion oferta">
-                        <img src="./img/adorno-cumple15.jpg" alt="">
-                        <a href="./pages/tienda.html">Presente cumpleaños 15</a>
-                        <h3 class="precio-normal">ANTES $2000</h3>
-                        <h3 class="precio-oferta">AHORA $1800</h3>                     
+                        <img src="./img/img-productos-off3.png" alt="Camion didactico">
+                        <a href="./pages/tienda.html">Camion didactico</a>
+                        <h3 class="precio-normal">ANTES $5000</h3>
+                        <h3 class="precio-oferta">AHORA $3750</h3>                     
                     </div>
                     <div class="card-publicacion oferta">
-                        <img src="./img/Baul.jpg" alt="">
-                        <a href="./pages/tienda.html">Baul</a>
-                        <h3 class="precio-normal">ANTES $18000</h3>
-                        <h3 class="precio-oferta">AHORA $15000</h3>                    
+                        <img src="./img/img-productos-off4.png" alt="Arbol Navidad">
+                        <a href="./pages/tienda.html">Arbol Navidad</a>
+                        <h3 class="precio-normal">ANTES $5000</h3>
+                        <h3 class="precio-oferta">AHORA $3750</h3>                    
                     </div>
                     <div class="card-publicacion oferta">
-                        <img src="./img/portaretratos.jpeg" alt="">
-                        <a href="./pages/tienda.html">Portaretratos 5mm</a>
-                        <h3 class="precio-normal">ANTES $3500</h3>
-                        <h3 class="precio-oferta">AHORA $3000</h3>                     
+                        <img src="./img/img-productos-off5.png" alt="Caja Archivos">
+                        <a href="./pages/tienda.html">Caja Archivos</a>
+                        <h3 class="precio-normal">ANTES $7000</h3>
+                        <h3 class="precio-oferta">AHORA $5250</h3>                     
                     </div>
                     <div class="card-publicacion oferta">
-                        <img src="./img/cubo.jpg" alt="">
-                        <a href="./pages/tienda.html">Cubo 12mm</a>
+                        <img src="./img/img-productos-off6.png" alt="Maquillador">
+                        <a href="./pages/tienda.html">Maquillador</a>
                         <h3 class="precio-normal">ANTES $10000</h3>
-                        <h3 class="precio-oferta">AHORA $8600</h3>                     
+                        <h3 class="precio-oferta">AHORA $7500</h3>                     
                     </div>
                     <div class="card-publicacion oferta">
-                        <img src="./img/decoracion-15-años.jpg" alt="">
-                        <a href="./pages/tienda.html">Decoraciones cumpleaños de 15</a>
+                        <img src="./img/img-productos-off7.png" alt="Porta celulares">
+                        <a href="./pages/tienda.html">Porta celulares</a>
                         <h3 class="precio-normal">ANTES $2500</h3>
-                        <h3 class="precio-oferta">AHORA $2000</h3>                      
+                        <h3 class="precio-oferta">AHORA $1875</h3>                      
                     </div>
                     <div class="card-publicacion oferta">
-                        <img src="./img/llaveros.jpg" alt="">
-                        <a href="./pages/tienda.html">Llaveros diseño a gusto</a>
+                        <img src="./img/img-productos-off8.png" alt="Portaretrato">
+                        <a href="./pages/tienda.html">Portaretrato</a>
                         <h3 class="precio-normal">ANTES $2500</h3>
-                        <h3 class="precio-oferta">AHORA $2000</h3>                   
-                    </div>
-                    <div class="card-publicacion oferta">
-                        <img src="./img/maquillador.png" alt="">
-                        <a href="./pages/tienda.html">Maquillador personal</a>
-                        <h3 class="precio-normal">ANTES $15000</h3>
-                        <h3 class="precio-oferta">AHORA $13200</h3>                     
+                        <h3 class="precio-oferta">AHORA $1875</h3>                   
                     </div>
                 </div>
             </div>
@@ -187,57 +187,42 @@
                 <h2>PRODUCTOS DESTACADOS</h2>
                 <div class="container-de-publicaciones">
                     <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
+                        <img src="./img/img-productos-destacado1.png" alt="Bastidores">
+                        <a href="./pages/tienda.html">Bastidores</a>
                         <h3>$2500</h3>                
                     </div>
                     <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
+                        <img src="./img/img-productos-destacado2.png" alt="Bandejas de fibrofacil">
+                        <a href="./pages/tienda.html">Bandejas de fibrofacil</a>
+                        <h3>$4500</h3>                
+                    </div>
+                    <div class="card-publicacion">
+                        <img src="./img/img-productos-destacado3.png" alt="Juego Didactico | Ta-Te-Ti">
+                        <a href="./pages/tienda.html">Juego Didactico | TaTeTi</a>
+                        <h3>$2750</h3>                
+                    </div>
+                    <div class="card-publicacion">
+                        <img src="./img/img-productos-destacado4.png" alt="Gimnasio Nordico Bebes">
+                        <a href="./pages/tienda.html">Gimnasio Nordico Bebes</a>
+                        <h3>$14300</h3>                
+                    </div>
+                    <div class="card-publicacion">
+                        <img src="./img/img-productos-destacado5.png" alt="Bandejas Desayuno Cama">
+                        <a href="./pages/tienda.html">Bandejas Desayuno Cama</a>
                         <h3>$2500</h3>                
                     </div>
                     <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
-                        <h3>$2500</h3>                
-                    </div>
-                    <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
-                        <h3>$2500</h3>                
-                    </div>
-                    <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
-                        <h3>$2500</h3>                
-                    </div>
-                    <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
-                        <h3>$2500</h3>                
-                    </div>
-                    <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
-                        <h3>$2500</h3>                
-                    </div>
-                    <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
-                        <h3>$2500</h3>                
-                    </div>
-                    <div class="card-publicacion">
-                        <img src="./img/bandejas.png" alt="">
-                        <a href="./pages/tienda.html">Bandejas de fibrofacil 5mm</a>
-                        <h3>$2500</h3>                
-                    </div>               
+                        <img src="./img/img-productos-destacado6.png" alt="Pizarra Niños/as">
+                        <a href="./pages/tienda.html">Pizarra Niños/as</a>
+                        <h3>$20250</h3>                
+                    </div>         
                 </div>                
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-izquierda">
-            <img class="logo-footer" src="./img/favicon.png" alt="Duende carpintero">
+            <img class="logo-footer" src="./img/logo-duende-solo.png" alt="Duende carpintero">
         </div>
         <div class="footer-centro">
             <a href="./index.html"><img src="./img/nombre-logo.png" alt="El duende carpintero"></a>
@@ -251,11 +236,11 @@
                     <input type="email" name="suscripcion" id="" placeholder="¿Cuál es tu email?">
                     <input type="submit" name="" id="" value="SUSCRIBIRME">
                 </form>
-            </div>
-            <div class="redes">
-                <div><a href="https://www.instagram.com/elduendecarpintero.ok/"><img src="./img/instagram.png" alt="Logo instragram"></a></div>
-                <div><a href="https://www.facebook.com/BrendayPanchi/?locale=es_LA"><img src="./img/facebook.png" alt="Logo facebook"></a></div>
-                <div><a href="https://wa.me/c/5493492603664"><img src="./img/whatsapp.png" alt="Logo whatsapp"></a></div>
+                <div class="redes">
+                    <div><a href="https://www.instagram.com/elduendecarpintero.ok/"><img src="./img/instagram.png" alt="Logo instragram"></a></div>
+                    <div><a href="https://www.facebook.com/BrendayPanchi/?locale=es_LA"><img src="./img/facebook.png" alt="Logo facebook"></a></div>
+                    <div><a href="https://wa.me/c/5493492603664"><img src="./img/whatsapp.png" alt="Logo whatsapp"></a></div>
+                </div>
             </div>
         </div>
     </footer>
