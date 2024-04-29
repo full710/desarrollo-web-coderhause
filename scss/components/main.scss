@@ -244,12 +244,12 @@ main{
     section{
         .boxs-blog{
             width: 100%;
-            margin: auto;
+            margin-top: 2%;
+            margin-bottom: 2%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            border:solid 3px lightseagreen;
             .contenedor-box{
                 position: relative;
                 width: 400px;
