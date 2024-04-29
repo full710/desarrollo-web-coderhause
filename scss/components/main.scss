@@ -146,8 +146,7 @@ main{
             margin-right: 15px;
         }
         div{
-            margin-left: 15px;
-            p{}          
+            margin-left: 15px;          
         }
     }
 }
@@ -165,8 +164,6 @@ main{
             p{
                 font-size: 15px;
                 flex-wrap: wrap;
-            }
-            iframe{
             }
         }
         section{
@@ -194,9 +191,6 @@ main{
                     input{
                         @extend %forms-style;
                     }
-                }
-                p{
-
                 }
             }
         }
