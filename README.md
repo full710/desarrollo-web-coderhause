@@ -11,7 +11,9 @@ Este repositorio contiene el proyecto desarrollado para el curso de Desarrollo W
 ## Consideraciones
 - Las imágenes utilizadas en el proyecto han sido optimizadas para mejorar el rendimiento del sitio.
 - Se ha completado la implementación de responsividad en todas las páginas del sitio.
-- La página de Blog ha sido finalizada y está lista para mostrar publicaciones realizadas en Instagram para fechas específicas, como Navidad, Día del Niño, etc.
+- La página de Blog ha sido finalizada. 
+- Se ha optimizado el rendimiento de la página de Blog al optar por un formato más simple, evitando la integración de publicaciones de Instagram.
+
 
 ## Proyecto Final
 Para el proyecto final, se ha mejorado la presentación del sitio, optimizado las imágenes, completado la implementación de responsividad en todas las páginas y finalizado la página de Blog.
