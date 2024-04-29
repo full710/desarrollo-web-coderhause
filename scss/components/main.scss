@@ -5,11 +5,8 @@ main{
             display: none;
             .contenedor-portada{
                 position: relative;
-                display: flex;
                 width: 100%;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
+                @include flex(flex, center, center, column);
                 img{
                     width: 100%;
                 }
@@ -21,9 +18,7 @@ section{
     .container-grande{
         width: 65%;
         background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(flex, center, center, column);
         padding: 3px;
         margin: 20px auto;
         border-radius: 5px;
@@ -44,10 +39,7 @@ section{
             color: black;
             background: white;
             .card-publicacion{
-                display: inline-flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                @include flex(inline-flex, space-between, center, column);
                 width: 200px;
                 height: 300px;
                 margin-right: 3px;
@@ -55,7 +47,7 @@ section{
                 color: white;
                 border: solid white;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                transition: transform 0.5s ease;
+                transition: $sombra;
                 &:hover{
                     box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.527);
                     transform: scale(1.01);
@@ -69,7 +61,7 @@ section{
                     text-align: center;
                     font-size: 18px;
                     text-decoration: none;
-                    color: #000000;
+                    color: black;
                 }
                 h3{
                     text-align: center;
@@ -79,9 +71,7 @@ section{
             }
             .oferta{
                 .precio-normal{
-                    font-size: 12px !important;
-                    text-decoration: line-through;
-                    color: gray;
+                    @extend %precio-tachado;
                 }
             }
         }
@@ -92,42 +82,38 @@ section{
 main{
     section{
         .main-tienda{
-            display: flex;
-            flex-direction: row;
+            @include flex(flex,flex-start,stretch,row);
             .grid-contenedor{
                 background-color: white;
                 flex-grow: 1;
-                border: solid 2px lightseagreen;
+                border: solid 2px $color-terciario;
                 margin: 5px;
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
                 gap: 15px;
                 padding: 15px;
                 .grid-item, .oferta{
-                    display: inline-flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                    @include flex(inline-flex,space-between,center,column);
                     height: 300px;
-                    align-items: center;
                     margin-right: 3px;
                     vertical-align: top;
                     color: white;
                     border: solid white;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    box-shadow: $sombra;
                     &:hover {
-                        box-shadow: 3px 8px 12px #FEC501;
+                        box-shadow: $sombra-hover;
                         transform: scale(1.02);
                     }
                     img{
-                        width: 200px;
-                        height: 200px;
+                        width: 195px;
+                        height: 195px;
                     }
                     a{
                         text-wrap: wrap;
                         text-align: center;
                         font-size: 18px;
                         text-decoration: none;
-                        color: #000000;
+                        color: black;
                     }
                     h3{
                         text-align: center;
@@ -135,9 +121,7 @@ main{
                         color: black;
                     }
                     .precio-normal{
-                        font-size: 12px !important;
-                        text-decoration: line-through;
-                        color: gray;
+                        @extend %precio-tachado;
                     }
                     .precio-oferta{
                         text-align: center;
@@ -171,9 +155,7 @@ main{
 /**MAIN CONTACTO**/
 main{
     .main-contacto{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex,space-around,center,row);
         margin-top: 40px;
         margin-bottom: 40px;
         .medios{
@@ -189,45 +171,28 @@ main{
         }
         section{
             .mensaje-direct{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex,flex-start,stretch,column);
                 .form-top{
                     display: flex;
                     justify-content: space-evenly;
                     input{
-                        border: solid rgb(196, 118, 1) 2px;
-                        font-style: italic;
-                        padding: 11px;
-                        width: 98%;
-                        letter-spacing: 1px;
+                        @extend %forms-style;
                         margin: 2px;
                     }
                 }
                 .asunto{
                     input{
-                        border: solid rgb(196, 118, 1) 2px;
-                        font-style: italic;
-                        padding: 11px;
-                        width: 98%;
-                        letter-spacing: 1px;
+                        @extend %forms-style;
                     }
                 }
                 .area-texto{
                     textarea{
-                        border: solid rgb(196, 118, 1) 2px;
-                        font-style: italic;
-                        padding: 11px;
-                        width: 98%;
-                        letter-spacing: 1px;
+                        @extend %forms-style;
                     }
                 }
                 .boton-enviar{
                     input{
-                        border: solid rgb(196, 118, 1) 2px;
-                        font-style: italic;
-                        padding: 11px;
-                        width: 98%;
-                        letter-spacing: 1px;
+                        @extend %forms-style;
                     }
                 }
                 p{
@@ -246,10 +211,8 @@ main{
             width: 100%;
             margin-top: 2%;
             margin-bottom: 2%;
-            display: flex;
+            @include flex(flex,center,center,row);
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
             .contenedor-box{
                 position: relative;
                 width: 400px;
@@ -262,7 +225,7 @@ main{
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                    background: #FEC501;
+                    background: $color-secundario;
                     border: solid 1px white;
                     transition:  width 3s ease;
                     z-index: 2;
@@ -276,12 +239,9 @@ main{
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                    background: lightseagreen;
+                    background: $color-terciario;
                     z-index: 1;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(flex,center,center,column);
                     p{
                         margin-left: 3%;
                         margin-right: 3%;

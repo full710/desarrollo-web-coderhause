@@ -4,6 +4,20 @@
   padding: 0;
   box-sizing: border-box; }
 
+/**VARIABLES**/
+main .main-contacto section .mensaje-direct .form-top input, main .main-contacto section .mensaje-direct .asunto input, main .main-contacto section .mensaje-direct .area-texto textarea, main .main-contacto section .mensaje-direct .boton-enviar input {
+  border: solid #FEC501 2px;
+  font-style: italic;
+  padding: 11px;
+  width: 98%;
+  letter-spacing: 1px; }
+
+section .container-grande .container-de-publicaciones .oferta .precio-normal, main section .main-tienda .grid-contenedor .grid-item .precio-normal, main section .main-tienda .grid-contenedor .oferta .precio-normal {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: gray; }
+
+/*MIXINS*/
 body {
   font-family: "Poppins", sans-serif;
   background-color: #FE3A4A; }
@@ -25,8 +39,8 @@ body {
   background-color: #FEC501 !important;
   margin-bottom: 5px;
   margin-top: 5px;
-  border-top: solid lightseagreen 4px !important;
-  border-bottom: solid lightseagreen 4px !important; }
+  border-top: solid #20B2AA 4px !important;
+  border-bottom: solid #20B2AA 4px !important; }
 
 .nav-item {
   font-size: 20px !important; }
@@ -83,11 +97,11 @@ main section .portada-fija {
   display: none; }
   main section .portada-fija .contenedor-portada {
     position: relative;
-    display: flex;
     width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    justify-content: center; }
+    flex-direction: column; }
     main section .portada-fija .contenedor-portada img {
       width: 100%; }
 
@@ -95,8 +109,9 @@ section .container-grande {
   width: 65%;
   background-color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 3px;
   margin: 20px auto;
   border-radius: 5px; }
@@ -117,9 +132,9 @@ section .container-grande {
     background: white; }
     section .container-grande .container-de-publicaciones .card-publicacion {
       display: inline-flex;
-      flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      flex-direction: column;
       width: 200px;
       height: 300px;
       margin-right: 3px;
@@ -127,7 +142,7 @@ section .container-grande {
       color: white;
       border: solid white;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.5s ease; }
+      transition: 0 4px 6px rgba(0, 0, 0, 0.1); }
       section .container-grande .container-de-publicaciones .card-publicacion:hover {
         box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.527);
         transform: scale(1.01); }
@@ -139,24 +154,22 @@ section .container-grande {
         text-align: center;
         font-size: 18px;
         text-decoration: none;
-        color: #000000; }
+        color: black; }
       section .container-grande .container-de-publicaciones .card-publicacion h3 {
         text-align: center;
         font-size: 20px;
         color: black; }
-    section .container-grande .container-de-publicaciones .oferta .precio-normal {
-      font-size: 12px !important;
-      text-decoration: line-through;
-      color: gray; }
 
 /*MAIN TIENDA*/
 main section .main-tienda {
   display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
   flex-direction: row; }
   main section .main-tienda .grid-contenedor {
     background-color: white;
     flex-grow: 1;
-    border: solid 2px lightseagreen;
+    border: solid 2px #20B2AA;
     margin: 5px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -164,35 +177,31 @@ main section .main-tienda {
     padding: 15px; }
     main section .main-tienda .grid-contenedor .grid-item, main section .main-tienda .grid-contenedor .oferta {
       display: inline-flex;
-      flex-direction: column;
       justify-content: space-between;
-      height: 300px;
       align-items: center;
+      flex-direction: column;
+      height: 300px;
       margin-right: 3px;
       vertical-align: top;
       color: white;
       border: solid white;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
       main section .main-tienda .grid-contenedor .grid-item:hover, main section .main-tienda .grid-contenedor .oferta:hover {
-        box-shadow: 3px 8px 12px #FEC501;
+        box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.527);
         transform: scale(1.02); }
       main section .main-tienda .grid-contenedor .grid-item img, main section .main-tienda .grid-contenedor .oferta img {
-        width: 200px;
-        height: 200px; }
+        width: 195px;
+        height: 195px; }
       main section .main-tienda .grid-contenedor .grid-item a, main section .main-tienda .grid-contenedor .oferta a {
         text-wrap: wrap;
         text-align: center;
         font-size: 18px;
         text-decoration: none;
-        color: #000000; }
+        color: black; }
       main section .main-tienda .grid-contenedor .grid-item h3, main section .main-tienda .grid-contenedor .oferta h3 {
         text-align: center;
         font-size: 20px;
         color: black; }
-      main section .main-tienda .grid-contenedor .grid-item .precio-normal, main section .main-tienda .grid-contenedor .oferta .precio-normal {
-        font-size: 12px !important;
-        text-decoration: line-through;
-        color: gray; }
       main section .main-tienda .grid-contenedor .grid-item .precio-oferta, main section .main-tienda .grid-contenedor .oferta .precio-oferta {
         text-align: center;
         font-size: 20px;
@@ -215,6 +224,7 @@ main .main-contacto {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   margin-top: 40px;
   margin-bottom: 40px; }
   main .main-contacto .medios h3 {
@@ -224,35 +234,14 @@ main .main-contacto {
     flex-wrap: wrap; }
   main .main-contacto section .mensaje-direct {
     display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
     flex-direction: column; }
     main .main-contacto section .mensaje-direct .form-top {
       display: flex;
       justify-content: space-evenly; }
       main .main-contacto section .mensaje-direct .form-top input {
-        border: solid #c47601 2px;
-        font-style: italic;
-        padding: 11px;
-        width: 98%;
-        letter-spacing: 1px;
         margin: 2px; }
-    main .main-contacto section .mensaje-direct .asunto input {
-      border: solid #c47601 2px;
-      font-style: italic;
-      padding: 11px;
-      width: 98%;
-      letter-spacing: 1px; }
-    main .main-contacto section .mensaje-direct .area-texto textarea {
-      border: solid #c47601 2px;
-      font-style: italic;
-      padding: 11px;
-      width: 98%;
-      letter-spacing: 1px; }
-    main .main-contacto section .mensaje-direct .boton-enviar input {
-      border: solid #c47601 2px;
-      font-style: italic;
-      padding: 11px;
-      width: 98%;
-      letter-spacing: 1px; }
 
 /*MAIN BLOG*/
 main section .boxs-blog {
@@ -260,9 +249,10 @@ main section .boxs-blog {
   margin-top: 2%;
   margin-bottom: 2%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
   main section .boxs-blog .contenedor-box {
     position: relative;
     width: 400px;
@@ -286,12 +276,12 @@ main section .boxs-blog {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: lightseagreen;
+      background: #20B2AA;
       z-index: 1;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column; }
       main section .boxs-blog .contenedor-box .box2-blog p {
         margin-left: 3%;
         margin-right: 3%;
@@ -466,7 +456,7 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     width: 85% !important; } }
 
-@media screen and (max-width: 473px) {
+@media screen and (max-width: 557px) {
   main section .main-tienda .grid-contenedor {
     grid-template-columns: 1fr;
     width: 95% !important; } }
