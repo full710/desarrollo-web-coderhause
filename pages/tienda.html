@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--<link rel="stylesheet" href="../css/style.css">-->
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
     <title>El duende Carpintero | Inicio</title>
 
@@ -59,226 +59,175 @@
   </nav>
   <main>
     <section>
-      <div class="main-tienda">
-        <div class="boton-filtro">
-          <div class="dropdown">
-            <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Filtro
-            </button>
-            <ul class="dropdown-menu">
-              <div class="boton-buscar">
-                <div class="container-fluid">
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar.." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
+        <div class="main-tienda">
+            <div class="boton-filtro">
+                <div class="boton-cerrado">
+                    <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Busqueda avanzada
+                    </button>
                 </div>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                  Bandejas
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                  Juegos para chicos
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                  Casa de muñecas
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                  Centros de mesa
-                </label>
-              </div>
-              <div>
-                <p></p>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                  Varios para artesanias
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                  Pintados
-                </label>
-              </div>
-            </ul>
-          </div>
-        </div>
-        <div class="filtro-expand">
-          <div class="boton-buscar">
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2 buscador-filtro" type="search" placeholder="Buscar.."
-                  aria-label="Search">
-                <button class="btn btn-info" type="submit">Buscar</button>
-              </form>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body d-flex ">
+                        <div class="boton-buscar">
+                            <div class="container-fluid">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar.."
+                                        aria-label="Search">
+                                    <button class="btn btn-info" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <label><input type="checkbox" class="filtro" value="Bandejas"> Bandejas</label>
+                        <label><input type="checkbox" class="filtro" value="Juegos para chicos"> Juegos para chicos</label>
+                        <label><input type="checkbox" class="filtro" value="Casa de muñecas"> Casa de muñecas</label>
+                        <label><input type="checkbox" class="filtro" value="Centros de mesa"> Centros de mesa</label>
+                        <label><input type="checkbox" class="filtro" value="Varios para artesanías"> Varios para artesanías</label>
+                        <label><input type="checkbox" class="filtro" value="Pintados"> Pintados</label>
+                        <label><input type="checkbox" class="filtro" value="Decoración navideña"> Decoración navideña</label>
+                        <label><input type="checkbox" class="filtro" value="Utilidad práctica"> Utilidad práctica</label>
+                        <label><input type="checkbox" class="filtro" value="Personalizados con nombres o iniciales"> Personalizados con nombres o iniciales</label>
+                        <label><a href="./tienda.html"><input type="submit" value="Apply Filter" class="btn btn-outline-info "></a></label>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="form-check primer-filtro">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Bandejas
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Juegos para chicos
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Casa de muñecas
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Centros de mesa
-            </label>
-          </div>
-          <div>
-            <p></p>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Varios para artesanias
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Pintados
-            </label>
-          </div>
-          </ul>
-        </div>
-        <div class="grid-contenedor">
-          <div class="grid-item oferta">
-            <img src="../img/img-productos-off1.png" alt="Juego didactico">
-            <a href="../pages/tienda.html">Juego didactico</a>
-            <h3 class="precio-normal">ANTES $5000</h3>
-            <h3 class="precio-oferta">AHORA $3750</h3>
-          </div>
-          <div class="grid-item oferta">
-            <img src="../img/img-productos-off2.png" alt="Maletin kit Pintura">
-            <a href="../pages/tienda.html">Maletin kit Pintura</a>
-            <h3 class="precio-normal">ANTES $7500</h3>
-            <h3 class="precio-oferta">AHORA $5625</h3>
-          </div>
-          <div class="grid-item oferta">
-            <img src="../img/img-productos-off3.png" alt="Camion didactico">
-            <a href="../pages/tienda.html">Camion didactico</a>
-            <h3 class="precio-normal">ANTES $5000</h3>
-            <h3 class="precio-oferta">AHORA $3750</h3>
-          </div>
-          <div class="grid-item oferta">
-            <img src="../img/img-productos-off4.png" alt="Arbol Navidad">
-            <a href="../pages/tienda.html">Arbol Navidad</a>
-            <h3 class="precio-normal">ANTES $5000</h3>
-            <h3 class="precio-oferta">AHORA $3750</h3>
-          </div>
-          <div class="grid-item oferta">
-            <img src="../img/img-productos-off5.png" alt="Caja Archivos">
-            <a href="../pages/tienda.html">Caja Archivos</a>
-            <h3 class="precio-normal">ANTES $7000</h3>
-            <h3 class="precio-oferta">AHORA $5250</h3>
-          </div>
-          <div class="grid-item oferta">
-            <img src="../img/img-productos-off6.png" alt="Maquillador">
-            <a href="../pages/tienda.html">Maquillador</a>
-            <h3 class="precio-normal">ANTES $10000</h3>
-            <h3 class="precio-oferta">AHORA $7500</h3>
-          </div>
-          <div class="grid-item oferta">
-            <img src="../img/img-productos-off7.png" alt="Porta celulares">
-            <a href="../pages/tienda.html">Porta celulares</a>
-            <h3 class="precio-normal">ANTES $2500</h3>
-            <h3 class="precio-oferta">AHORA $1875</h3>
-          </div>
-          <div class="grid-item oferta">
-            <img src="../img/img-productos-off8.png" alt="Portaretrato">
-            <a href="../pages/tienda.html">Portaretrato</a>
-            <h3 class="precio-normal">ANTES $2500</h3>
-            <h3 class="precio-oferta">AHORA $1875</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-destacado1.png" alt="Bastidores">
-            <a href="../pages/tienda.html">Bastidores</a>
-            <h3>$2500</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-destacado2.png" alt="Bandejas de fibrofacil">
-            <a href="../pages/tienda.html">Bandejas de fibrofacil</a>
-            <h3>$4500</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-destacado3.png" alt="Juego Didactico | Ta-Te-Ti">
-            <a href="../pages/tienda.html">Juego Didactico | TaTeTi</a>
-            <h3>$2750</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-destacado4.png" alt="Gimnasio Nordico Bebes">
-            <a href="../pages/tienda.html">Gimnasio Nordico Bebes</a>
-            <h3>$14300</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-destacado5.png" alt="Bandejas Desayuno Cama">
-            <a href="../pages/tienda.html">Bandejas Desayuno Cama</a>
-            <h3>$2500</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-destacado6.png" alt="Pizarra Niños/as">
-            <a href="../pages/tienda.html">Pizarra Niños/as</a>
-            <h3>$20250</h3>
+            <div class="filtro-expand">
+                <div class="boton-buscar">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar.."
+                                aria-label="Search">
+                            <button class="btn btn-info" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label><input type="checkbox" class="filtro" value="Bandejas"> Bandejas</label>
+                    <label><input type="checkbox" class="filtro" value="Juegos para chicos"> Juegos para chicos</label>
+                    <label><input type="checkbox" class="filtro" value="Casa de muñecas"> Casa de muñecas</label>
+                    <label><input type="checkbox" class="filtro" value="Centros de mesa"> Centros de mesa</label>
+                    <label><input type="checkbox" class="filtro" value="Varios para artesanías"> Varios para artesanías</label>
+                    <label><input type="checkbox" class="filtro" value="Pintados"> Pintados</label>
+                    <label><input type="checkbox" class="filtro" value="Decoración navideña"> Decoración navideña</label>
+                    <label><input type="checkbox" class="filtro" value="Utilidad práctica"> Utilidad práctica</label>
+                    <label><input type="checkbox" class="filtro" value="Personalizados con nombres o iniciales"> Personalizados con nombres o iniciales</label>
+                    <br><br>
+                    <label><a href="./tienda.html"><input type="submit" value="Aplicar Filtro" class="btn btn-info "></a></label>
+                </div>
+            </div> 
+            <div class="grid-contenedor">
+                <div class="grid-item oferta">
+                    <img src="../img/img-productos-off1.png" alt="Juego didactico">
+                    <a href="../pages/tienda.html">Juego didactico</a>
+                    <h3 class="precio-normal">ANTES $5000</h3>
+                    <h3 class="precio-oferta">AHORA $3750</h3>
+                </div>
+                <div class="grid-item oferta">
+                    <img src="../img/img-productos-off2.png" alt="Maletin kit Pintura">
+                    <a href="../pages/tienda.html">Maletin kit Pintura</a>
+                    <h3 class="precio-normal">ANTES $7500</h3>
+                    <h3 class="precio-oferta">AHORA $5625</h3>
+                </div>
+                <div class="grid-item oferta">
+                    <img src="../img/img-productos-off3.png" alt="Camion didactico">
+                    <a href="../pages/tienda.html">Camion didactico</a>
+                    <h3 class="precio-normal">ANTES $5000</h3>
+                    <h3 class="precio-oferta">AHORA $3750</h3>
+                </div>
+                <div class="grid-item oferta">
+                    <img src="../img/img-productos-off4.png" alt="Arbol Navidad">
+                    <a href="../pages/tienda.html">Arbol Navidad</a>
+                    <h3 class="precio-normal">ANTES $5000</h3>
+                    <h3 class="precio-oferta">AHORA $3750</h3>
+                </div>
+                <div class="grid-item oferta">
+                    <img src="../img/img-productos-off5.png" alt="Caja Archivos">
+                    <a href="../pages/tienda.html">Caja Archivos</a>
+                    <h3 class="precio-normal">ANTES $7000</h3>
+                    <h3 class="precio-oferta">AHORA $5250</h3>
+                </div>
+                <div class="grid-item oferta">
+                    <img src="../img/img-productos-off6.png" alt="Maquillador">
+                    <a href="../pages/tienda.html">Maquillador</a>
+                    <h3 class="precio-normal">ANTES $10000</h3>
+                    <h3 class="precio-oferta">AHORA $7500</h3>
+                </div>
+                <div class="grid-item oferta">
+                    <img src="../img/img-productos-off7.png" alt="Porta celulares">
+                    <a href="../pages/tienda.html">Porta celulares</a>
+                    <h3 class="precio-normal">ANTES $2500</h3>
+                    <h3 class="precio-oferta">AHORA $1875</h3>
+                </div>
+                <div class="grid-item oferta">
+                    <img src="../img/img-productos-off8.png" alt="Portaretrato">
+                    <a href="../pages/tienda.html">Portaretrato</a>
+                    <h3 class="precio-normal">ANTES $2500</h3>
+                    <h3 class="precio-oferta">AHORA $1875</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-destacado1.png" alt="Bastidores">
+                    <a href="../pages/tienda.html">Bastidores</a>
+                    <h3>$2500</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-destacado2.png" alt="Bandejas de fibrofacil">
+                    <a href="../pages/tienda.html">Bandejas de fibrofacil</a>
+                    <h3>$4500</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-destacado3.png" alt="Juego Didactico | Ta-Te-Ti">
+                    <a href="../pages/tienda.html">Juego Didactico | TaTeTi</a>
+                    <h3>$2750</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-destacado4.png" alt="Gimnasio Nordico Bebes">
+                    <a href="../pages/tienda.html">Gimnasio Nordico Bebes</a>
+                    <h3>$14300</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-destacado5.png" alt="Bandejas Desayuno Cama">
+                    <a href="../pages/tienda.html">Bandejas Desayuno Cama</a>
+                    <h3>$2500</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-destacado6.png" alt="Pizarra Niños/as">
+                    <a href="../pages/tienda.html">Pizarra Niños/as</a>
+                    <h3>$20250</h3>
 
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-new6.png" alt="Candy bar">
-            <a href="../pages/tienda.html">Candy bar</a>
-            <h3>$10000</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-new5.png" alt="Cara para regalo">
-            <a href="../pages/tienda.html">Cara para regalo</a>
-            <h3>$5000</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-new4.png" alt="Caja copa vino">
-            <a href="../pages/tienda.html">Caja copa vino</a>
-            <h3>$5000</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-new3.png" alt="Juego mesa/silla">
-            <a href="../pages/tienda.html">Juego mesa/silla</a>
-            <H3>$30000</H3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-new2.png" alt="Juego de cocina">
-            <a href="../pages/tienda.html">Juego de cocina</a>
-            <h3>$130000</h3>
-          </div>
-          <div class="grid-item">
-            <img src="../img/img-productos-new1.png" alt="Casa de muñecas">
-            <a href="../pages/tienda.html">Casa de muñecas</a>
-            <h3>$150000</h3>
-          </div>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-new6.png" alt="Candy bar">
+                    <a href="../pages/tienda.html">Candy bar</a>
+                    <h3>$10000</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-new5.png" alt="Cara para regalo">
+                    <a href="../pages/tienda.html">Cara para regalo</a>
+                    <h3>$5000</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-new4.png" alt="Caja copa vino">
+                    <a href="../pages/tienda.html">Caja copa vino</a>
+                    <h3>$5000</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-new3.png" alt="Juego mesa/silla">
+                    <a href="../pages/tienda.html">Juego mesa/silla</a>
+                    <H3>$30000</H3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-new2.png" alt="Juego de cocina">
+                    <a href="../pages/tienda.html">Juego de cocina</a>
+                    <h3>$130000</h3>
+                </div>
+                <div class="grid-item">
+                    <img src="../img/img-productos-new1.png" alt="Casa de muñecas">
+                    <a href="../pages/tienda.html">Casa de muñecas</a>
+                    <h3>$150000</h3>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
   </main>
   <footer>

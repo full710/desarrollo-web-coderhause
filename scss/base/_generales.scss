@@ -86,37 +86,8 @@ body {
         transform: scale(1.03);
     }
 }
-/*MAIN TIENDA BOOSTRAP*/
-.boton-filtro {
-    display: none !important;
-}
-.boton-buscar {
-    margin-top: 20px;
-    width: 98%;
-    div{
-        form{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            button{
-                width: 90%;
-                margin-top: 3%;
-                font-size: 90%;
-            }
-            input{
-                width: 90% !important;
-                font-size: 90% !important;
-            }
-        }
-    }
-}
-.filtro-expand {
-    width: 15%;
-    display: block !important;
-    margin-left: 20px;
-}
-.primer-filtro {
-    margin-top: 20px !important;
-}
+
+
+
 
 

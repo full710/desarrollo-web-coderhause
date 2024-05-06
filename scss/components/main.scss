@@ -83,6 +83,63 @@ main{
     section{
         .main-tienda{
             @include flex(flex,flex-start,stretch,row);
+            .boton-filtro{
+                display: none;
+                .boton-cerrado{
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 3px;
+                }
+                .collapse{
+                    .card{
+                        .boton-buscar{
+                            margin-top: 20px;
+                            width: 98%;
+                            div{
+                                form{
+                                    display: flex;
+                                    flex-direction: row;
+                                    flex-wrap: wrap;
+                                    button{
+                                        width:90%;
+                                        margin-top: 3%;
+                                        font-size: 90%;
+                                    }
+                                    input{
+                                        width: 90%;
+                                        font-size: 90%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .filtro-expand{
+                display: block;
+                width: 15%;
+                margin-left: 20px;
+                .boton-buscar{
+                    margin-top: 20px;
+                    width: 98%;
+                    div{
+                        form{
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            button{
+                                width:90%;
+                                margin-top: 3%;
+                                font-size: 90%;
+                            }
+                            input{
+                                width: 90%;
+                                font-size: 90%;
+                            }
+                        }
+                    }
+                }
+            }
             .grid-contenedor{
                 background-color: white;
                 flex-grow: 1;
