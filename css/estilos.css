@@ -150,8 +150,7 @@ main section .main-tienda {
       width: 98%; }
       main section .main-tienda .boton-filtro .collapse .card .boton-buscar div form {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; }
+        flex-direction: column; }
         main section .main-tienda .boton-filtro .collapse .card .boton-buscar div form button {
           width: 90%;
           margin-top: 3%;
@@ -432,15 +431,24 @@ footer {
 
 /*MAIN TIENDA*/
 @media screen and (max-width: 986px) {
-  main section .main-tienda {
+  .main-tienda {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important; }
-  main section .main-tienda .filtro-expand {
+  .main-tienda .filtro-expand {
     display: none !important; }
-  main section .main-tienda .boton-filtro {
-    display: flex !important;
-    margin: auto !important; } }
+  .main-tienda .boton-filtro {
+    display: inline !important;
+    position: sticky;
+    margin: 15px;
+    top: 2px;
+    left: 15px; }
+  .grid-item:hover {
+    box-shadow: none;
+    transform: none; }
+  .grid-item:active {
+    box-shadow: 3px 8px 12px #FEC501;
+    transform: scale(1.02); } }
 
 @media screen and (max-width: 986px) {
   main section .main-tienda .grid-contenedor {
